@@ -1,0 +1,14 @@
+/codes
+/editorial
+/errata
+
+.metals
+.vscode
+
+/scala/develop/project
+/scala/develop/target
+/scala/develop/.bsp
+
+/rust/develop/target/
+/rust/develop/**/*.rs.bk
+/rust/develop/**/*~
