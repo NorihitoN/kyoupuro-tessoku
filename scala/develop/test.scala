@@ -1,28 +1,28 @@
-import scala.io.StdIn._
+// import scala.io.StdIn._
+import java.util.Scanner
 
-object Main {
-  def main(args: Array[String]): Unit = {
-    val n = readInt()
-    val a = readLine().split(" ").map(_.toInt).toVector
-    val d = readInt()
-    val lr = Vector.fill(d){0}.map(_ => readLine().split(" ").map(_.toInt).toVector)
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val n = sc.nextInt()
+  val k = sc.nextInt()
+  val a = 0 +: Vector.fill(n){sc.nextInt()}
 
-    val x = Array.fill(n){0}
-    val y = Array.fill(n){0}
-
-    x(0) = a(0)
-    for (i <- 1 to (n-1)){
-      x(i) = Array(x(i-1), a(i)).max
+  def search(k: Long): Long = {
+    @annotation.tailrec
+    def go(k: Long, l: Long, r: Long): Long = {
+      val m = (l + r) / 2
+      if (l == r) l
+      else if (check(m)) go(k, l, m)
+      else go(k, m+1, r)
     }
-
-    y(n-1) = a(n-1)
-
-    for (i <- (n-2) to 0 by -1) {
-      y(i)= Array(y(i+1), a(i)).max
-    }
-
-    for (i <- 0 until d )
-      println(Array(x(lr(i)(0)-2), y(lr(i)(1))).max)
-    
+    go(k, 1, 1000000000)
   }
+
+  def check(m: Long): Boolean = {
+    val printer = (1 to n).map(i => m/a(i))
+    val sum = printer.sum
+    sum >= k
+  }
+
+  println(search(k))
 }
