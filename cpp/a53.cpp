@@ -2,25 +2,27 @@
 #include <functional>
 #include <iostream>
 #include <queue>
+#include <vector>
 using namespace std;
 
 int main() {
-  int q;
-  cin >> q;
-  queue<string> data_queue;
-  for (int i = 0; i < q; i++) {
+  priority_queue<int, vector<int>, greater<int>> pq;
+  int Q;
+  cin >> Q;
 
+  for (int num = 0; num < Q; num++) {
     int query;
     cin >> query;
     if (query == 1) {
-      string name;
-      cin >> name;
-      data_queue.push(name);
+      int data;
+      cin >> data;
+      pq.push(data);
     } else if (query == 2) {
-      cout << data_queue.front() << endl;
+      cout << pq.top() << endl;
     } else {
-      data_queue.pop();
+      pq.pop();
     }
   }
+
   return 0;
 }

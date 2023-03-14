@@ -7,7 +7,8 @@ object Main extends App {
   val k = sc.nextInt()
   val a = 0 +: Vector.fill(n){sc.nextInt()}
 
-  def search(k: Long): Long = {
+
+  def search(k: Lng): Long = {
     @annotation.tailrec
     def go(k: Long, l: Long, r: Long): Long = {
       val m = (l + r) / 2
