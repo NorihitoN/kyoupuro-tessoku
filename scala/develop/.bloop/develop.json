@@ -1,0 +1,162 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "develop",
+        "directory": "/Users/norihito.nakata/personal/kyopro-tessoku/scala/develop",
+        "workspaceDir": "/Users/norihito.nakata/personal/kyopro-tessoku/scala/develop",
+        "sources": [
+            "/Users/norihito.nakata/personal/kyopro-tessoku/scala/develop/src/main/scala",
+            "/Users/norihito.nakata/personal/kyopro-tessoku/scala/develop/src/main/scala-2.13",
+            "/Users/norihito.nakata/personal/kyopro-tessoku/scala/develop/src/main/scala-2",
+            "/Users/norihito.nakata/personal/kyopro-tessoku/scala/develop/src/main/java",
+            "/Users/norihito.nakata/personal/kyopro-tessoku/scala/develop/target/scala-2.13/src_managed/main",
+            "/Users/norihito.nakata/personal/kyopro-tessoku/scala/develop/test.scala"
+        ],
+        "dependencies": [
+            
+        ],
+        "classpath": [
+            "/Users/norihito.nakata/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar"
+        ],
+        "out": "/Users/norihito.nakata/personal/kyopro-tessoku/scala/develop/.bloop/develop",
+        "classesDir": "/Users/norihito.nakata/personal/kyopro-tessoku/scala/develop/.bloop/develop/scala-2.13/classes",
+        "resources": [
+            "/Users/norihito.nakata/personal/kyopro-tessoku/scala/develop/src/main/resources",
+            "/Users/norihito.nakata/personal/kyopro-tessoku/scala/develop/target/scala-2.13/resource_managed/main"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.13.10",
+            "options": [
+                "-deprecation",
+                "-feature",
+                "-unchecked",
+                "-Xlint"
+            ],
+            "jars": [
+                "/Users/norihito.nakata/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar",
+                "/Users/norihito.nakata/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.10/scala-compiler-2.13.10.jar",
+                "/Users/norihito.nakata/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.10/scala-reflect-2.13.10.jar",
+                "/Users/norihito.nakata/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/java-diff-utils/java-diff-utils/4.12/java-diff-utils-4.12.jar",
+                "/Users/norihito.nakata/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.21.0/jline-3.21.0.jar",
+                "/Users/norihito.nakata/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.9.0/jna-5.9.0.jar"
+            ],
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                },
+                {
+                    "names": [
+                        "zio.test.sbt.ZTestFramework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/Users/norihito.nakata/Library/Caches/Coursier/arc/https/github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_x64_mac_hotspot_8u292b10.tar.gz/jdk8u292-b10/Contents/Home/jre",
+                "options": [
+                    "-Duser.dir=/Users/norihito.nakata/personal/kyopro-tessoku/scala/develop"
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.10",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/Users/norihito.nakata/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/Users/norihito.nakata/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.10",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/Users/norihito.nakata/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/Users/norihito.nakata/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "library"
+        ]
+    }
+}
