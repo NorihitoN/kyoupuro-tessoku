@@ -1,0 +1,12 @@
+{
+  "configurations": {
+    "launch": {
+      "adapter": "CodeLLDB",
+      "filetypes": ["rust", "cpp"],
+      "configuration": {
+        "request": "launch",
+        "program": "${workspaceRoot}/a.out"
+      }
+    }
+  }
+}

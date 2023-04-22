@@ -1,0 +1,12 @@
+{
+  "configurations": {
+    "launch": {
+      "adapter": "CodeLLDB",
+      "filetypes": ["rust", "cpp"],
+      "configuration": {
+        "request": "launch",
+        "program": "${workspaceRoot}/target/debug/deps/main-b53ad4bf1ffc7e63"
+      }
+    }
+  }
+}
