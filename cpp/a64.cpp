@@ -50,7 +50,6 @@ int main() {
     }
   }
 
-
   for (int i = 1; i <= N; i++) {
     if (dist[i] == 2000000000)
       cout << "-1" << endl;
